@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor C# - Python</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-light bg-primary justify-content-center">
+        <a class="navbar-brand" href="#" style="color: white; font-size: 30px;">Traductor</a>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Traductor de C# a Python</h1>
+                <hr><br><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="custom-file">
+                    <input type="file" class="custom-file-input" id="customFile" onchange="cargarArchivo()">
+                    <label class="custom-file-label" for="customFile">codigo fuente</label>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 500px">
+            <div class="col">
+                <div class="form-group">
+                    <label for="taCS">Codigo en C#</label>
+                    <textarea class="form-control" style="height: 400px;" id="taCS"></textarea>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="taPY">Codigo en Python</label>
+                    <textarea class="form-control" style="height: 400px;" id="taPY" readonly></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="height: 400px;">
+            <div class="col">
+                <div class="form-group">
+                    <label for="taHTML">Salida Html</label>
+                    <textarea class="form-control" style="height: 300px;" id="taHTML" readonly></textarea>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="taJSON">Salida JSON</label>
+                    <textarea class="form-control" style="height: 300px;" id="taJSON" readonly></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Tabla de simobolos</h2>
+                <hr><br><br>
+            </div>
+            <table class="table table-striped" id="tabla">
+                <tr>
+                    <td>#</td>
+                    <td>tipo</td>
+                    <td>nombre</td>
+                    <td>valor</td>
+                </tr>
+            </table>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h2>Tabla de Errores</h2>
+                <hr><br><br>
+            </div>
+            <table class="table table-striped" id="tablaError">
+                <tr>
+                    <td>#</td>
+                    <td>Descripcion</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="bundle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
